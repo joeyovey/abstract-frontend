@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #e5ddf8;
 }
 
@@ -34,10 +34,55 @@ body{
     margin-left: 5px;
 }
 
-.navbar button{
+.navbar .buttons{
+    display: flex;
+    gap: 15px;
+}
+.buttons button{
     padding: 8px 15px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     font-size: 14px;
+}
+
+.submit-btn{
+    background-color: #333;
+    color: white;
+}
+
+.sign-in-btn{
+    background-color: #a259ff;
+    color: white;
+}
+.container{
+    text-align: center;
+    margin-top: 50px;
+}
+.container h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: black;
+}
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+}
+.search-box input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+.search-box button{
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
 }
