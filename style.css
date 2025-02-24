@@ -8,7 +8,7 @@
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     /* height: 100vh; */
     background-color: #e5ddf8;
@@ -72,6 +72,7 @@ body{
     border-radius: 5px;
     padding: 10px;
     width: 50%;
+    margin-left: 25%;
 }
 .search-box input{
     border: none;
@@ -83,6 +84,77 @@ body{
 .search-box button{
     border: none;
     background: none;
-    font-size: 16px;
+    font-size: 35px;
     cursor: pointer;
+}
+
+/* first section */
+.help-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.help-item {
+    display: flex;
+    align-items: flex-start;
+    width: 45%;
+    gap: 15px;
+}
+
+.help-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.help-item div {
+    max-width: 400px;
+}
+
+.help-item h2 {
+    font-size: 18px;
+    color: black;
+}
+
+.help-item p {
+    font-size: 14px;
+    color: #333;
+}
+
+.help-item a {
+    color: #6a0dad;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Footer section */
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 60px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+.footer-section h3, .footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+.logo img {
+    width: 40px;
+    margin-bottom: 10px;
 }
